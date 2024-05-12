@@ -22,7 +22,7 @@ export default function Home() {
   };
 
   return (
-    <div className="grid w-full gap-2">
+    <div className="grid w-full gap-2 px-20">
       <Textarea onChange={(e) => setProject(e.target.value)} placeholder="Enter project description here" />
       <Button onClick={handleClick}>Send message</Button>
       {board && <Board board={board} />}
